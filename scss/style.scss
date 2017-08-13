@@ -118,15 +118,15 @@ header {
 		background-color: #000;
 		opacity: 0;
 		z-index: 0;
-		-webkit-transition: all 0.7s ease-out;
-    	-moz-transition: all 0.7s ease-out;
-   	 	-o-transition: all 0.7s ease-out;
-    	transition: all 0.7s ease-out;
 	}
 
 .shadow-active{
 	opacity: .7;
 	z-index: 2;
+	-webkit-transition: all 0.7s ease-out;
+    	-moz-transition: all 0.7s ease-out;
+   	 	-o-transition: all 0.7s ease-out;
+    	transition: all 0.7s ease-out;
 
 }
 
