@@ -15,7 +15,24 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<div class="shadow"></div>
+<div class="pop-up-block">
+
+		<div class="pop-up">
+			<p class="pop-title">Обратный звонок</p>
+			<span class="icon-close">&times;</span>
+			<div class="title">
+				<p>Оставте свое имя и телефон</p>
+				<p>Мы свяжемся с Вами в ближайшее время</p>
+			</div>
+			<p class="lable">Имя</p>
+				<input type="text" name="phone">
+				<p class="lable">Телефон</p>
+				<input type="tel" name="phone">
+				<a class="btn-enter" href="#"> Вход</a>
+		</div>
 	<header>
+	</div>
 		<div class="header-panel">
 			<div class="g-wrapper">
 				<div class="flex-container">
@@ -45,6 +62,27 @@
 					</div>
 					<div class="registration">
 						<a href="#"  class="enter">Войти в кабинет</a>
+						<div class="account">
+							<div class="ac-wrapper">
+								<h2 class="p-title">Вход в личный кабинет</h2>
+							<div class="form">
+								<form>
+									<p class="lable">Телефон</p>
+									<input type="tel" name="phone">
+									<p class="lable">Пароль</p>
+									<input type="password" name="phone">
+									<label>
+										<input class="checkbox"type="checkbox" name="remember">
+									<span class="checkbox-custom"></span>
+									<span class="lable">Запомнить меня</span>
+									</label>
+									<a class="forgot" href="#">Забыли пароль?</a>
+									<a class="btn-enter" href="#"> Вход</a>
+									<a class="reg" href="#">Регистрация</a>
+								</form>
+							</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>			
@@ -59,6 +97,7 @@
 					</div>
 					<div class="header-search">
 						<div class="search-form">
+							<a href="#"><i class="fa fa-search"></i></a>
 							<input type="text" name="search" placeholder="Поиск по товарам">
 						</div>
 					</div>
@@ -70,8 +109,37 @@
 						</div>
 					</div>
 					<div class="h-purchase">
-						<div class="comparison"><a href="#">Сравнение</a></div>
-						<div class="b-goods"><a href="#">Корзина</a></div>
+
+						<div class="camp-block">
+							<a class="comparison" href="#"><span class="icon-compr"></span>Сравнение</a>
+						</div>
+						<div class="cart-block">
+							<a class="cart" href="#"><span class="icon-cart"></span>Корзина</a>
+							<div class="cart-open">
+							<div class="cart-good">
+								<img src="data/c-prod2.jpg">
+								<div class="c-main-descr">
+									<p class="descr">Мяч для собак Лайкер, диаметр 5 см</p>
+								<span class="qv">2шт</span>
+								<span class="c-price">39грн</span>
+								</div>
+							</div>
+							<div class="cart-good">
+								<img src="data/c-prod1.jpg">
+								<div class="c-main-descr">
+									<p class="descr">Костюм для собак Pet FASHION винтаж L</p>
+								<span class="qv">1шт</span>
+								<span class="c-price">452,71грн</span>
+								</div>
+							</div>
+							<div class="sum">
+								<span>Итого</span>
+								<span class="c-price ">530,71</span>
+							</div>
+							<a class="btn-enter" href="#">Оформить заказ</a>
+						</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -79,33 +147,197 @@
 		<div class="goods-nav">
 			<div class="g-wrapper">
 				<nav class="flex-container">
-					<div class="n-item">
-						<div class="icon"></div>
-						<a href="#">Кошки</a>
+					<div class="n-item">			
+						<a href="#"><span class="icon"></span>Кошки</a>
+						<div class="drop-menu">
+							<div class="dm-block">
+								<div class="category">
+									<a href="#">Сухой корм</a>
+								</div>
+								<div class="sub-categories">
+									<a href="#">Для отдельных пород</a>
+									<a href="#">Для взрослых пород</a>
+									<a href="#">Для котят</a>
+									<a href="#">Особые потребности</a>
+								</div>
+							</div>
+							<div class="dm-block">
+								<div class="category">
+									<a href="#">Консервы</a>
+								</div>
+								<div class="sub-categories">
+									<a href="#">Особые потребности</a>
+									<a href="#">Для котят</a>
+									<a href="#">Для взрослых кошек</a>
+								</div>
+							</div>
+							<div class="dm-block">
+								<div class="category">
+									<a href="#">Амуниция</a>
+								</div>
+								<div class="sub-categories">
+									<a href="#">Ошейники</a>
+									<a href="#">Шлейки</a>
+									<a href="#">Поводки и рулетки</a>
+								</div>
+							</div>
+							<div class="dm-block">
+								<div class="category">
+									<a href="#">Для котят</a>
+								</div>
+								<div class="sub-categories">
+									<a href="#">Заменитель молока</a>
+									<a href="#">Разное</a>
+								</div>
+							</div>
+							<div class="dm-block">
+								<div class="category">
+									<a href="#">Лакомства</a>
+								</div>
+								<div class="sub-categories">
+									<a href="#">Витаминизированные</a>
+									<a href="#">Натуральные</a>
+								</div>
+							</div>
+							<div class="dm-block">
+								<div class="category">
+									<a href="#">Витамины</a>
+								</div>
+								<div class="sub-categories">
+									<a href="#">Для котят</a>
+									<a href="#">Для кожи и шерсти</a>
+									<a href="#">Успокоительные и обезбаливающие</a>
+									<a href="#">Для связок и суствавов</a>
+									<a href="#">Выведение шерсти</a>
+									<a href="#">Комплексные</a>
+								</div>
+							</div>
+							<div class="dm-block">
+								<div class="category">
+									<a href="#">Средства для дома от запаха кошек</a>
+								</div>
+								<div class="sub-categories">
+									<a href="#">Очищающие</a>
+									<a href="#">Запрещающие</a>
+								</div>
+							</div>
+							<div class="dm-block">
+								<div class="category">
+									<a href="#">Лечебный корм</a>
+								</div>
+								<div class="sub-categories">
+									<a href="#">Сухой</a>
+									<a href="#">Консервы</a>
+								</div>
+							</div>
+							<div class="dm-block">
+								<div class="category">
+									<a href="#">Груминг для кошек</a>
+								</div>
+								<div class="sub-categories">
+									<a href="#">Инструменты для груминга</a>
+									<a href="#">Фурминатор для кошек</a>
+									<a href="#">Инструменты для стрижки</a>
+									<a href="#">Щетки, расчески. сликеры</a>
+									<a href="#">Когтерезы</a>
+									
+								</div>
+							</div>
+							<div class="dm-block">
+								<div class="category">
+									<a href="#">Ветеринария</a>
+								</div>
+								<div class="sub-categories">
+									<a href="#">Ранозаживляющие средства</a>
+									<a href="#">Для кожи и шерсти</a>
+									<a href="#">Воротники</a>
+									<a href="#">Выведение шерсти</a>
+									<a href="#">Антигальментные препараты</a>
+									<a href="#">Разное</a>
+								</div>
+							</div>
+							<div class="dm-block">
+								<div class="category">
+									<a href="#">Средства от блох и клещей</a>
+								</div>
+								<div class="sub-categories">
+									<a href="#">Капли</a>
+									<a href="#">Для кожи и шерсти</a>
+									<a href="#">Спреи</a>
+									<a href="#">Шампуни</a>
+									<a href="#">Инструменты</a>
+								</div>
+							</div>
+							<div class="dm-block">
+								<div class="category">
+									<a href="#">Игрушки для кошек</a>
+								</div>
+								<div class="sub-categories">
+									<a href="#">Дразнилки</a>
+									<a href="#">Развивающие</a>
+									<a href="#">Мышки</a>
+									<a href="#">Мячи</a>
+									<a href="#">Разное</a>
+									<a href="#">Игровые туннели</a>
+								</div>
+							</div>
+							<div class="dm-block">
+								<div class="category">
+									<a href="#">Средства по уходу за кошками</a>
+								</div>
+								<div class="sub-categories">
+									<a href="#">За зубами</a>
+									<a href="#">За глазами</a>
+									<a href="#">За шерстью</a>
+									<a href="#">За ушами</a>
+									<a href="#">Наполнитель для туалетов</a>
+									<a href="#">Туалеты</a>
+									<a href="#">Лопатки и коврики для кошачьих туалетов</a>
+								</div>
+							</div>
+							<div class="dm-block">
+								<div class="category">
+									<a href="#">Аксессуары для кошек</a>
+								</div>
+								<div class="sub-categories">
+									<a href="#">Мягкие места</a>
+									<a href="#">Для автомобиля</a>
+									<a href="#">Транспортировка</a>
+									<a href="#">Когтеточки</a>
+									<a href="#">Миски и поилки</a>
+									<a href="#">Клетки и переноски</a>
+									<a href="#">Разное</a>
+									<a href="#">Автокормушки</a>
+									<a href="#">Адресники</a>						
+								</div>
+							</div>
+
+						</div>
+
 					</div>
 					<div class="n-item">
-						<div class="icon icon2"></div>
-						<a href="#">Собаки</a>
+						
+						<a href="#"><span class="icon icon2"></span>Собаки</a>
 					</div>
 					<div class="n-item">
-						<div class="icon icon3"></div>
-						<a href="#">Птицы</a>
+						
+						<a href="#"><span class="icon icon3"></span>Птицы</a>
 					</div>
 					<div class="n-item">
-						<div class="icon icon4"></div>
-						<a href="#">Грызуны</a>
+						
+						<a href="#"><span class="icon icon4"></span>Грызуны</a>
 					</div>
 					<div class="n-item">
-						<div class="icon icon5"></div>
-						<a href="#">Рептилии</a>
+						
+						<a href="#"><span class="icon icon5"></span>Рептилии</a>
 					</div>
 					<div class="n-item">
-						<div class="icon icon6"></div>
-						<a href="#">Рыбы</a>
+						
+						<a href="#"><span class="icon icon6"></span>Рыбы</a>
 					</div>
 					<div class="n-item">
-						<div class="icon icon7"></div>
-						<a href="#">Пруд</a>
+						
+						<a href="#"><span class="icon icon7"></span>Пруд</a>
 					</div>
 
 				</nav>
@@ -160,6 +392,8 @@
 			</div>
 		</div>
 	</header>
+
+
 	<div class="content">
 		<div class="brands-block">
 			<div class="g-wrapper">

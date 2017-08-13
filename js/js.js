@@ -1,5 +1,4 @@
 
-
  $(document).on('ready', function() {    
     $('.b-slider').slick({
       infinite: true,
@@ -138,5 +137,40 @@ document.addEventListener('DOMContentLoaded', function() {
 
   }
 
+      var acc = document.querySelector('.account');
+
+    document.querySelector('.enter').addEventListener('click', function(){
+      
+      if( acc.classList.contains('account-show') ) {
+
+          acc.classList.remove('account-show');
+
+      } else {
+
+          acc.classList.add('account-show');
+
+      }
+       
+    });
+
+    var cb = document.querySelector('.cb');
+
+    cb.addEventListener('click', function(){
+
+      document.querySelector('.pop-up-block').classList.add('pop-up-block-active');
+      document.querySelector('.shadow').classList.add('shadow-active');
+    })
+
+    var close = document.querySelector('.icon-close');
+
+    close.addEventListener('click', function(){
+
+      document.querySelector('.pop-up-block').classList.remove('pop-up-block-active');
+      document.querySelector('.shadow').classList.remove('shadow-active');
+    })
+
 
 });
+
+
+ 
