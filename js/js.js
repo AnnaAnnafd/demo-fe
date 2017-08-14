@@ -169,8 +169,10 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.shadow').classList.remove('shadow-active');
     })
 
-
 });
+
+
+
 
 
  

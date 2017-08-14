@@ -17,19 +17,18 @@
 <body>
 <div class="shadow"></div>
 <div class="pop-up-block">
-
 		<div class="pop-up">
-			<p class="pop-title">Обратный звонок</p>
+			<p class="cb-title">Обратный звонок</p>
 			<span class="icon-close">&times;</span>
 			<div class="title">
 				<p>Оставте свое имя и телефон</p>
 				<p>Мы свяжемся с Вами в ближайшее время</p>
 			</div>
 			<p class="lable">Имя</p>
-				<input type="text" name="phone">
+				<input id="name" type="text" name="name">
 				<p class="lable">Телефон</p>
-				<input type="tel" name="phone">
-				<a class="btn-enter" href="#"> Вход</a>
+				<input id="phone" type="tel" name="phone">
+				<a id="callback" class="btn-enter" href="#"> Отправить</a>
 		</div>
 	<header>
 	</div>
@@ -64,7 +63,7 @@
 						<a href="#"  class="enter">Войти в кабинет</a>
 						<div class="account">
 							<div class="ac-wrapper">
-								<h2 class="p-title">Вход в личный кабинет</h2>
+								<h2 class="pop-title">Вход в личный кабинет</h2>
 							<div class="form">
 								<form>
 									<p class="lable">Телефон</p>
@@ -117,6 +116,7 @@
 							<a class="cart" href="#"><span class="icon-cart"></span>Корзина</a>
 							<div class="cart-open">
 							<div class="cart-good">
+								<div class="card-icon-close">&times</div>
 								<img src="data/c-prod2.jpg">
 								<div class="c-main-descr">
 									<p class="descr">Мяч для собак Лайкер, диаметр 5 см</p>
@@ -125,6 +125,7 @@
 								</div>
 							</div>
 							<div class="cart-good">
+							<div class="card-icon-close">&times</div>
 								<img src="data/c-prod1.jpg">
 								<div class="c-main-descr">
 									<p class="descr">Костюм для собак Pet FASHION винтаж L</p>
@@ -541,7 +542,7 @@
 					</div>
 
 				</div>
-				<div class="sct-title">
+				<div class="sct-title mar-sec">
 					<a href="#">Все товары</a>
 				</div>
 			</div>
@@ -625,7 +626,7 @@
 					
 
 				</div>
-				<div class="sct-title">
+				<div class="sct-title news">
 					<a href="#">Все новости</a>
 				</div>
 

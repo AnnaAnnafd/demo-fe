@@ -150,7 +150,7 @@ header {
   position: absolute;
   background-color: #000;
   opacity: 0;
-  z-index: 0; }
+  z-index: -1; }
 
 .shadow-active {
   opacity: .7;
@@ -183,7 +183,7 @@ header {
   .pop-up-block .title {
     text-align: center;
     margin-bottom: 20px; }
-  .pop-up-block .pop-title {
+  .pop-up-block .cb-title {
     font-size: 34px;
     line-height: 40px;
     font-weight: bold;
@@ -322,7 +322,7 @@ input[type="text"] {
   border: 1px solid #a1d3e5;
   border-radius: 5px; }
 
-.p-title {
+.pop-title {
   text-align: center;
   overflow: hidden;
   font-size: 22px;
@@ -391,7 +391,7 @@ input[type="text"] {
   border-radius: 2px; }
 
 .main-header {
-  margin-bottom: 25px; }
+  margin-bottom: 12px; }
 
 .h-logo {
   flex-grow: 1;
@@ -518,6 +518,7 @@ input[type="text"] {
   right: 0;
   top: 78px; }
   .cart-open .cart-good {
+    position: relative;
     padding: 27px;
     display: table;
     border-bottom: 1px solid #e6e6e6; }
@@ -556,7 +557,6 @@ input[type="text"] {
     margin-bottom: 25px; }
 
 .goods-nav {
-  margin-bottom: 20px;
   position: relative; }
 
 .n-item {
@@ -799,7 +799,7 @@ input[type="text"] {
   font-size: 16px;
   color: #000;
   font-weight: 500;
-  margin-top: 50px;
+  margin-top: 33px;
   position: relative; }
   .g-nav:hover .line-hover:after {
     display: block; }
@@ -811,7 +811,7 @@ input[type="text"] {
       color: #ff572d; }
 
 .prod-nav {
-  margin-bottom: 55px; }
+  margin-bottom: 40px; }
 
 .line-hover:after {
   margin: 0 auto;
@@ -823,7 +823,7 @@ input[type="text"] {
   content: '';
   position: absolute;
   left: 20%;
-  top: 16px; }
+  top: 26px; }
 
 .p-title {
   padding: 25px 50px;
@@ -868,6 +868,9 @@ input[type="text"] {
     color: #ff2a2a; }
     .prod .not-avail:before {
       background: url("../images/sprite1.png") -18px -24px no-repeat; }
+
+.sct-title.mar-sec {
+  margin-top: 41px; }
 
 .icon-ok:before {
   position: absolute;
@@ -990,7 +993,7 @@ input[type="text"] {
     right: -50px;
     border-radius: 50%; }
   .news-slider .n-slide {
-    min-height: 392px;
+    min-height: 373px;
     margin-right: 10px;
     margin-left: 10px;
     padding-bottom: 50px; }
@@ -1009,7 +1012,6 @@ input[type="text"] {
     font-size: 16px;
     padding: 0 20px 18px;
     text-align: left;
-    margin-bottom: 20px;
     min-height: 50px; }
 
 footer {
@@ -1018,8 +1020,11 @@ footer {
   min-height: 750px;
   margin-top: 200px; }
 
+.sct-title.news {
+  margin-top: 56px; }
+
 .seo-block {
-  padding-top: 120px;
+  padding-top: 132px;
   margin-bottom: 90px;
   max-width: 860px; }
   .seo-block ::-webkit-scrollbar-button {
@@ -1045,7 +1050,7 @@ footer {
   .seo-block .s-title {
     color: #fff;
     font-size: 32px;
-    line-height: 34px;
+    line-height: 43px;
     margin-bottom: 25px;
     max-width: 80%;
     font-weight: 700; }
@@ -1216,6 +1221,13 @@ footer {
   .f-logo {
     flex-basis: 100%;
     margin-bottom: 25px; } }
+.card-icon-close {
+  position: absolute;
+  color: red;
+  top: 60px;
+  left: 20px;
+  font-size: 16px; }
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .main-nav, .contacts, .callback {
@@ -1256,7 +1268,7 @@ footer {
   .f-info .social .mail-form {
     margin: 0 auto;
     margin-bottom: 25px; } }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 667px) {
   .prod {
     margin-right: 0; }
 
@@ -1264,7 +1276,40 @@ footer {
     flex-basis: 18%; }
 
   .adv-item .adv-descr {
-    font-size: 11px; } }
+    font-size: 11px; }
+
+  .pop-up-block {
+    width: 300px;
+    height: 300px;
+    padding: 10px; }
+
+  .pop-up-block .pop-up {
+    padding: 0; }
+
+  .pop-up-block .cb-title {
+    font-size: 16px; }
+
+  .pop-up-block .title {
+    font-size: 10px;
+    margin-bottom: 0; }
+
+  .btn-enter {
+    margin-top: 27px;
+    width: 170px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px; }
+
+  input[type="tel"], input[type="password"], input[type="text"] {
+    margin-bottom: 0; }
+
+  .account {
+    width: 300px; }
+
+  .account .forgot {
+    display: block;
+    float: left;
+    margin-bottom: 5px; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .contacts .numb {
@@ -1296,7 +1341,7 @@ footer {
     flex-basis: 25%; }
 
   .brands-block {
-    width: 94%;
+    width: 80%;
     margin: 0 auto; }
 
   .sct-title:after, .sct-title:before {
